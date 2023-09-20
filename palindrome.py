@@ -5,8 +5,5 @@ is_palindrome("radar") should return True.
 '''
 
 
-def is_palindrome(x):
-    if x == x[::-1]:
-        return True
-    else:
-        return False
+def is_palindrome(word):
+    return word == word[::-1]
