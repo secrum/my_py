@@ -14,4 +14,4 @@ def is_member2(itm, lst):
     for elem in lst:
         if elem == itm:
             return True
-        return False
+    return False
