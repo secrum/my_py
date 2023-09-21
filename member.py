@@ -6,9 +6,12 @@ exercise you should pretend Python did not have this operator.)
 '''
 
 
-def is_member(item, lst):
-    return item in lst
+def is_member(itm, lst):
+    return itm in lst
 
 
-def is_member2(item, lst):
-    return item in lst
+def is_member2(itm, lst):
+    for elem in lst:
+        if elem == itm:
+            return True
+        return False
