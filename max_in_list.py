@@ -8,6 +8,8 @@ largest one.
 
 
 def max_in_list(list):
+    if len(list) == 0:
+        raise Exception('Provided list cannot be empty')
     max_num = list[0]
     for num in list[1:]:
         if num > max_num:
